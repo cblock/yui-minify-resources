@@ -6,6 +6,4 @@ By default, in this alpha, all files ending with .css and .js will be
 compressed all other files including files ending with .min.js or .min.css are
 ignored.
 
-You can suppress compression of specific resources with nominify:true
-parameter - see the resources plugin (http://www.grails.org/plugin/resources)
-for details of how to declare resources.
+Read the plugin documentation at http://www.grails.org/plugin/yui-minify-resources for more details.

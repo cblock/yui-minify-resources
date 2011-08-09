@@ -1,6 +1,6 @@
------------------------
-Minify Resources Plugin
------------------------
+---------------------------
+YUI Minify Resources Plugin
+---------------------------
 
 Copyright [2011] Carsten Block
 

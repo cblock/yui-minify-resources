@@ -12,6 +12,11 @@ class YuiJsMinifyResourceMapper {
 
   def map(resource, config) {
 
+    if (config?.disable) {
+      if (log.debugEnabled) log.debug "YUI JS Minifier disabled in Config.groovy"
+      return false
+    }
+
     File inputFile = resource?.processedFile
     File targetFile = Util.getTargetFile(resource, Util.jsFilePattern)
     if (!targetFile) return false
@@ -26,7 +31,7 @@ class YuiJsMinifyResourceMapper {
       if (compressor) {
         targetFile.withWriter(encoding) {
           compressor.compress(it,
-              (config.lineBreak ?: -1),
+              (config?.lineBreak ?: -1),
               (config?.js?.noMunge ?: false),
               false, //non-verbose
               (config?.js?.preserveAllSemicolons ?: false),

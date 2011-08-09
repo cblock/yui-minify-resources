@@ -1,0 +1,9 @@
+plugin.xml
+*.zip          
+*.iml
+.idea
+.DS_Store
+dependencies.groovy
+target
+/stacktrace.log
+/src/docs/ref/Resources/

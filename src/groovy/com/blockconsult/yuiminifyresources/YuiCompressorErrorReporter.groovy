@@ -1,4 +1,4 @@
-package com.blockconsult.minifyresources
+package com.blockconsult.yuiminifyresources
 
 import org.apache.commons.logging.LogFactory
 import org.mozilla.javascript.ErrorReporter

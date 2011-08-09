@@ -1,6 +1,7 @@
-package com.blockconsult.minifyresources
+package com.blockconsult.yuiminifyresources
 
 import com.yahoo.platform.yui.compressor.CssCompressor
+import org.grails.plugin.resource.mapper.MapperPhase
 
 class YuiCssMinifyResourceMapper {
 

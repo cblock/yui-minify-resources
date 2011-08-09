@@ -1,4 +1,4 @@
-package com.blockconsult.minifyresources
+package com.blockconsult.yuiminifyresources
 
 /**
  * Bean that holds YUI compressor config options

@@ -1,4 +1,4 @@
-package com.blockconsult.minifyresources
+package com.blockconsult.yuiminifyresources
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -46,7 +46,7 @@ class Util {
 
     //skip resources where attribute "nominify=true" is set in resources config file
     if (resource.attributes?.nominify) {
-      if (log.debugEnabled) log.debug "Skip minifying [$inputFile] as 'nominify' option is set to true."
+      if (log.debugEnabled) log.debug "Skip minifying [${resource?.processedFile}] as 'nominify' option is set to true."
       return null
     }
 

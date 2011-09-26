@@ -12,6 +12,11 @@ class YuiJsMinifyResourceMapper {
 
   def map(resource, config) {
 
+    if (config?.disable) {
+      if (log.debugEnabled) log.debug "YUI JS Minifier disabled in Config.groovy"
+      return false
+    }
+
     File inputFile = resource?.processedFile
     File targetFile = Util.getTargetFile(resource, Util.jsFilePattern)
     if (!targetFile) return false

@@ -62,6 +62,8 @@ class Util {
     File targetFile = new File(inputFile.parentFile, targetFileName)
     if (targetFile.exists()) {
       if (log.debugEnabled) log.debug "Skip minifying [$inputFile] as minified version exists. Using that version instead."
+      resource.processedFile = targetFile
+      resource.updateActualUrlFromProcessedFile()
       return null
     }
 

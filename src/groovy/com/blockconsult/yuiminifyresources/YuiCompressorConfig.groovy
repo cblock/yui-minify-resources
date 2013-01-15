@@ -9,11 +9,17 @@ package com.blockconsult.yuiminifyresources
 class YuiCompressorConfig {
   int lineBreak = -1
   String charset = 'UTF-8'
-  boolean noMunge = false
+  
+  /*
+   * Henceforth, "munge" should be used instead of "noMunge", but "noMunge" is kept for backwards compatibility. 
+   * @deprecated
+   */
+  Boolean noMunge = null; // use Boolean in order to do a null test
+  boolean munge = false
   boolean preserveAllSemicolons = false
   boolean disableOptimizations = false
 
   public String toString() {
-    "[lineBreak: $lineBreak, charset: $charset, noMunge: $noMunge, preserveAllSemicolons: $preserveAllSemicolons, disableOptimizations: $disableOptimizations]"
+    "[lineBreak: $lineBreak, charset: $charset, munge: $munge, noMunge: $noMunge, preserveAllSemicolons: $preserveAllSemicolons, disableOptimizations: $disableOptimizations]"
   }
 }

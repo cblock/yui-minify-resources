@@ -1,4 +1,7 @@
 # YUI Minify Resources Plugin is deprecated #
+
+This repository is archived
+
 With the deprecation of the YUI Compressor tool (http://www.yuiblog.com/blog/2012/10/16/state-of-yui-compressor/) 
 this grails plugin has been deprecated too! You may still wish to use it in your projects but please be aware that
 no supprt and no bugfixing is provided.
